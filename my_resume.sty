@@ -1,0 +1,110 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{fontawesome5} 
+
+% Customization
+\definecolor{headerblue}{rgb}{0.2,0.4,0.6} % Adjust color if needed
+\titleformat{\section}{\large\bfseries\color{headerblue}}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\bfseries}{}{0em}{\\}[]
+
+\setlist[itemize]{leftmargin=*}
+
+\renewcommand{\baselinestretch}{1.1}
+
+\begin{document}
+
+% Header
+\begin{center}
+\begin{minipage}{\textwidth}
+    \flushleft
+    {\Huge \textbf{\textcolor{headerblue}{Praveen Gowtham}}} \\
+    \rule{\textwidth}{0.5mm} % Horizontal rule beneath the name
+\end{minipage}
+
+    \begin{minipage}[t]{0.48\textwidth}
+    \flushleft
+    \faEnvelope\ \href{mailto: praveen.gowtham@gmail.com}{praveen.gowtham@gmail.com} \\
+    \faPhone\ 646-724-1315 \\
+    \faMapMarker*\ New York, NY
+\end{minipage}%
+\begin{minipage}[t]{0.48\textwidth}
+    \flushright
+    \faLinkedin\ \href{https://www.linkedin.com/in/praveen-gowtham}{LinkedIn: praveen-gowtham} \\
+    \faGraduationCap\ \href{https://scholar.google.com/citations?user=-lVbqT8AAAAJ&hl=en&oi=ao}{Google Scholar} \\
+    \faGithub\ \href{https://github.com/admveen}{GitHub: admveen}
+\end{minipage}
+    \end{center}
+
+
+% Summary
+\section*{Summary}
+Data Scientist, Physicist, and Educator with over fifteen years of experience in research, data analysis, modeling, and experimental design. Strong mathematical foundation with expertise in machine learning and pattern recognition. Currently focused on harnessing multimodal vision and language models for knowledge extraction, retrieval-augmented generation (RAG), and the development of agentic workflows. 
+
+% Skills
+\section*{Skills}
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item \textbf{Programming \& Frameworks:} Languages: Python, SQL; ML Frameworks: PyTorch, TensorFlow, Scikit-learn, MLlib, MLFlow; NLP: Transformers, SpaCy, Gensim, NLTK, Langgraph
+    \item \textbf{Data Engineering \& Analytics:} PySpark, ETL/ELT Pipelines, Vector databases (PgVector, ChromaDB, and Weaviate), Data Visualization (Bokeh, Plotly)
+    \item \textbf{Machine Learning \& AI:} Classical ML, Time Series and Mixed Domain Analysis, Supervised and Unsupervised Deep Learning, Generative Modeling and Density Estimation. 
+    \item \textbf{Statistics/Math:} Statistical inference (Bayesian/Frequentist),  Hypothesis Testing, Experimental Design and AB testing, Mathematical Physics. Frameworks: Statsmodels, Scipy, Tensorflow Probability
+\end{itemize}
+% Education
+\section*{Education}
+\textbf{Cornell University}, Ph.D., Applied Physics, 2014 \\
+\textbf{Columbia University}, B.S., Applied Physics, 2005 \\
+\textbf{Springboard}, Data Science Certification, 2021
+
+% Employment
+\section*{Employment}
+
+\noindent\textbf{City University of New York: ASRC NanoFabrication Facility} \hfill \textit{New York, NY} \\
+\textbf{Data Scientist (Consultant)} \hfill \textit{8/2024 -- Present}
+\begin{itemize}
+    \item Developing a RAG-grounded, agentic chat assistant and information retrieval system to improve user and staff experiences, working closely with leadership to understand and address key challenges at the facility.
+    \item Leveraged multimodal models to extract and structure data from diverse document types, implemented a custom chunking strategy (combined tree recursion and late chunking), and optimized a PostgreSQL database with vector retrieval for efficient hybrid search. Resulted in improved context-aware retrievals and higher quality LLM responses to user queries. 
+
+\end{itemize}
+
+\noindent\textbf{The Flatiron School} \hfill \textit{New York, NY} \\
+\textbf{Principal Data Science Instructor} \hfill \textit{2/2022 -- Present}
+\begin{itemize}
+    \item Designed and delivered intensive courses in data analytics, inferential statistics, and machine learning, focusing on interactive learning through embedded code and dynamic visualizations using tools like Jupyter RISE, Bokeh, and Plotly. Lecture and instructional CSAT $>$ 90 \%, reflecting effective engagement and teaching strategies for students from diverse technical and non-technical backgrounds.
+    \item Trained a reward model for RLHF to help align an LLM with the role of a technical coach chat assistant in our Canvas LMS. Developed a pipeline with fine-tuned BERT embeddings feeding into a CatBoost classifier. 
+\end{itemize}
+
+\noindent\textbf{Brilliant.org} \hfill \textit{San Francisco, CA} \\
+\textbf{Content Developer} \hfill \textit{6/2019 - 2/2020}
+\begin{itemize}
+    \item Developed quantum physics course aimed at educated hobbyists and early college students, engaging learners through sequences of many bit-sized problems and interactives. Course available to Brilliant's subscriber base of nearly four million customers.
+\end{itemize}
+
+\noindent\textbf{University of California, Berkeley} \hfill \textit{Berkeley, CA} \\
+\textbf{Postdoctoral Fellow} \hfill \textit{1/2016 - 6/2019}
+\begin{itemize}
+    \item Created a mathematical framework to model resonant spin-wave and acoustic-wave interactions in ultra-thin films, enabling precise parameter extraction and aligning theoretical predictions with experimental results.
+    \item Developed experiments and conducted parameter extraction of novel spin torque amplitudes arising at complex material interfaces through analysis of electron transport measurements and beamline X-ray spectroscopy.
+    \item Designed experimental and data analysis workflows to separate magneto-thermal effects from spin torque signatures in topological insulator/ferromagnet microstructures, identifying key errors in prior published work.
+
+\end{itemize}
+
+
+\noindent\textbf{Cornell University} \hfill \textit{Ithaca, NY} \\
+\textit{Postdoctoral Fellow} \hfill \textit{1/2015 - 1/2016} \\
+\textit{Graduate Researcher} \hfill \textit{2006 -- 2014}
+\begin{itemize}
+    \item Developed novel microwave spectroscopy of ultra-thin magnetic films using ultrasonic waves, demonstrating state-of-the-art sensitivity to magnetic interactions through shrinkage regression analysis of gigahertz-frequency measurements.
+    \item Achieved 10x frequency stability improvement in spin-torque-driven microwave sources acting on insights gained from time-frequency analysis, stochastic modeling, and finite difference simulations.
+    \item Identified oxidation effects as a key pain-point for cryogenic MRAM reliability and developed successful passivation processes. Validated 1.5x switching current reduction and improvement in memory stability using a combination of rigorous statistical testing and Langevin simulations.
+\end{itemize}
+% Projects
+% \section*{Publications}
+\nocite{*}
+\renewcommand{\refname}{Select Publications} % Suppress the "References" header
+\bibliographystyle{abbrv} % Use your preferred style
+\bibliography{publications} % Your .bib file
+\end{document}
